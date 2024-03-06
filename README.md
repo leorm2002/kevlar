@@ -1,2 +1,4 @@
-# kevlar-docker
-Docker package for Kevlar EuroVoc classifier
+# kevlar
+Kevlar EuroVoc classifier.
+
+
