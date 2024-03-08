@@ -5,7 +5,7 @@ It includes an archive of EU legal documents in 24 languages, covering from 1951
 
 Authors: Lorenzo Bocchi and Alessio Palmero Aprosio.
 
-Some pre-processing tools have been collected in different Github projects. In particular, [ScrapeLex](https://github.com/bocchilorenzo/scrapelex) can be used to download and collect legal documents from EUR-Lex, and [AutoEuroVoc](https://github.com/bocchilorenzo/AutoEuroVoc) contains all the code to train and test the models.
+Some pre-processing tools are available in different Github projects. In particular, [ScrapeLex](https://github.com/bocchilorenzo/scrapelex) can be used to download and collect legal documents from EUR-Lex, and [AutoEuroVoc](https://github.com/bocchilorenzo/AutoEuroVoc) contains all the code to train and test the models.
 
 The documents can also be downloaded from the KEVLAR [OneDrive repository](https://fbk-my.sharepoint.com/:f:/g/personal/aprosio_fbk_eu/EuC0sZXqi-tEtj24Et25BHYBYkPIjs5eXupNpQ7H_sK1Rw?e=L6PTIn). Both the [models](https://dh.fbk.eu/software/kevlar-models/) and the [test data](https://dh.fbk.eu/software/kevlar-test.tar.gz) are available on the Digital Humanities KEVLAR repository.
 
