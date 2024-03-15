@@ -13,7 +13,7 @@ In this project one can find the [Dockerfile](Dockerfile) that can be used to bu
 
 ## Run the docker image
 
-To execute the software using the provided [Dockerfile](Dockerfile), first build the image using the command:
+To execute the software using the provided [Dockerfile](Dockerfile), clone/download the repository and build the image using the command:
 
 ```
 docker build --build-arg="LANGS=XXX" -t kevlar .
