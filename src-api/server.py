@@ -18,7 +18,8 @@ logger = logging.getLogger(__name__)
 max_results = 100
 
 models_path = environ.get("MODEL_PATH", "./models")
-device = environ.get("DEVICE", "cpu")
+device = int(environ.get("DEVICE", "-1"))
+
 language = environ.get("CLASSLANG", "en")
 label_mappings_path = environ.get("LABEL_MAPPINGS_PATH", "./label_mappings")
 mt_label_path = environ.get("MT_LABEL_PATH", "./mt_labels.json")
@@ -192,11 +193,11 @@ async def post_data(request: TextRequest, Token: str = Header(None, convert_unde
                 p['do']['label'] = do_label
                 p['do']["description"] = labels['do'][do_label]
         i += 1
-        # condition = i > top_k or threshold > p['score']
-        # if greedy:
-        #     condition = i > top_k and threshold > p['score']
-        # if condition or i > max_results:
-        #     break
+        condition = i > top_k or threshold > p['score']
+        if greedy:
+            condition = i > top_k and threshold > p['score']
+        if condition or i > max_results:
+            break
         if p['score'] < 0.01:
             break
         good_predictions.append(p)
